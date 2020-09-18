@@ -80,7 +80,7 @@ $tweaks = @(
 	"DisableSuperfetch",          # "EnableSuperfetch",
 	"DisableIndexing",            # "EnableIndexing",
 	"SetBIOSTimeUTC",             # "SetBIOSTimeLocal",
-	"DisableHibernation",		# "EnableHibernation",          # 
+	"DisableHibernation",		# "EnableHibernation",           
 	"EnableSleepButton",		# "DisableSleepButton",         
 	"DisableSleepTimeout",        # "EnableSleepTimeout",
 	# "DisableFastStartup",         # "EnableFastStartup",
@@ -176,7 +176,7 @@ $tweaks = @(
 # Recommended Titus Programs
 #########
 
-Function InstallTitusProgs {
+Function InstallProgs {
 	Write-Output "Installing Chocolatey"
 	Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 	choco install chocolatey-core.extension -y
@@ -187,14 +187,14 @@ Function InstallTitusProgs {
 	./OOSU10.exe ooshutup10.cfg /quiet
 }
 
-Function InstallAdobe {
-	Write-Output "Installing Adobe Acrobat Reader"
-	choco install adobereader -y
+Function InstallWinrar {
+	Write-Output "Installing Winrar"
+	choco install winrar -y
 }
 
-Function InstallJava {
-	Write-Output "Installing Java"
-	choco install jre8 -y
+Function InstallGoogleChrome {
+	Write-Output "Installing Google Chrome"
+	choco install googlechrome -y
 }
 
 Function Install7Zip {
