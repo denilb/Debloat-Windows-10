@@ -197,19 +197,39 @@ Function InstallGoogleChrome {
 	choco install googlechrome -y
 }
 
-Function Install7Zip {
-	Write-Output "Installing 7-Zip"
-	choco install 7zip -y
+Function InstallAudacity {
+	Write-Output "Installing Audacity"
+	choco install audacity -y
 }
 
-Function InstallNotepadplusplus {
-	Write-Output "Installing Notepad++"
-	choco install notepadplusplus -y
+Function Installutorrent {
+	Write-Output "Installing utorrent"
+	choco install utorrent -y
 }
 
-Function InstallMediaPlayerClassic {
-	Write-Output "Installing Media Player Classic (VLC Alternative)"
-	choco install mpc-hc -y
+Function InstallHandbrake {
+	Write-Output "Installing Handbrake"
+	choco install handbrake -y
+}
+
+Function InstallVLC {
+	Write-Output "Installing VLC"
+	choco install vlc -y
+}
+
+Function InstallGeforceEX {
+	Write-Output "Installing Geforce Experience"
+	choco install geforce-experience -y
+}
+
+Function InstallVMW {
+	Write-Output "Installing VMW"
+	choco install vmware-workstation-player -y
+}
+
+Function InstallMTeams {
+	Write-Output "Installing Microsoft Teams"
+	choco install microsoft.teams -y
 }
 
 ##########
